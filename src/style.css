@@ -1,0 +1,236 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/373/original/kiwihug-zGZYQQVmXw0-unsplash.jpg?1768247359");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  font-family: "Funnel Display", sans-serif;
+
+  font-weight: lighter;
+}
+
+.topApp {
+  background-color: transparent;
+  max-width: 600px;
+  padding: 20px 0px 10px 0px;
+  margin: 40px auto 0px;
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  width: 600px;
+  align-items: center;
+  gap: 10px;
+}
+
+header {
+  font-family: "Funnel Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 600px;
+  margin: 62px auto auto;
+  background-color: transparent;
+  color: #5c5591;
+}
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  margin: -10px;
+  padding: 34px 13px 5px 0;
+  text-shadow: 4px 5px 10px rgba(36, 41, 149, 0.2);
+  color: #5a5966;
+}
+main {
+  background-color: white;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 10px auto 10px auto;
+  padding-bottom: 3px;
+  margin: 10px auto;
+  box-shadow: 5px 5px 10px rgba(31, 58, 114, 0.2);
+}
+
+.search-form {
+  width: 100%;
+  padding: 0;
+}
+.search-form-input {
+  background-color: transparent;
+  border: 1px solid #5c5591;
+  border-radius: 6px;
+  width: 70%;
+  font-size: 12px;
+  padding: 10px 20px;
+  max-width: 600px;
+  box-shadow: 3px 3px 7px rgba(31, 58, 114, 0.2);
+}
+
+.search-form-button {
+  background: transparent;
+  padding: 10px 35px;
+  border: 1px solid #5c5591;
+  font-size: 12px;
+  margin-left: 2px;
+  border-radius: 6px;
+  width: 22%;
+  color: #5c5591;
+  transition: all 300ms ease;
+  box-shadow: 3px 3px 7px rgba(31, 58, 114, 0.2);
+}
+.search-form-button:hover {
+  color: white;
+  background-color: #5c5591;
+  cursor: pointer;
+}
+
+.weather-now {
+  list-style: none;
+  margin: 0;
+  padding: 10px 25px 0 25px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "city icon temp";
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 20px;
+  max-width: 600px;
+}
+.city {
+  grid-area: city;
+  font-size: 40px;
+  font-weight: 500;
+  padding: 12px 20px 0px 0px;
+}
+
+.icon {
+  grid-area: icon;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 7px 0 0 43px;
+}
+
+.icon img {
+  width: 70px;
+}
+
+.temp {
+  grid-area: temp;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.degrees {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.unit {
+  font-size: 18px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.country-description {
+  list-style: none;
+  margin: 0;
+  padding: 5px 25px 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "country desc";
+  font-style: italic;
+  color: #353157;
+}
+hr {
+  border: none;
+  height: 0.3px;
+  background-color: #f3f3f3;
+}
+
+.country {
+  grid-area: country;
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: start;
+}
+
+.description {
+  grid-area: desc;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
+  align-self: start;
+}
+
+.date-description {
+  list-style: none;
+  margin: 0;
+  padding: 5px 10px 30px 25px;
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "date humidity wind";
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.date {
+  grid-area: date;
+  text-align: left;
+}
+.humidity-grid,
+.wind-grid {
+  text-align: center;
+}
+.humidity {
+  grid-area: humidity;
+  text-align: center;
+}
+.wind {
+  grid-area: wind;
+  text-align: center;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.weather-forecast-day {
+  text-align: center;
+  font-size: 16px;
+  color: #5c5591;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  font-size: 38px;
+  text-align: center;
+  line-height: 45px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: #5c5591;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.weather-forecast-temperature {
+  padding: 0 10px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+  color: #5c5591;
+}
+a:hover {
+  text-decoration: underline;
+  color: #af781a;
+}

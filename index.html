@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Funnel+Display:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topApp">
+        <span class="cloudImage">
+          <img src="src/undraw.svg" alt="clouds" width="70px" />
+        </span>
+        <h1>weather app</h1>
+      </div>
+
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          id="cityInput"
+          class="search-form-input"
+          placeholder="Search for a city..."
+        />
+        <input
+          type="submit"
+          value="Search"
+          class="search-form-button"
+          id="search-form-button"
+        />
+      </form>
+    </header>
+
+    <main>
+      <ul class="weather-now">
+        <li class="city" id="city"></li>
+        <li class="icon" id="icon"></li>
+        <li class="temp">
+          <span class="degrees" id="temperature"></span
+          ><span class="unit">°C</span>
+        </li>
+      </ul>
+      <hr />
+      <ul class="country-description">
+        <li class="country"></li>
+        <li class="description"></li>
+      </ul>
+
+      <ul class="date-description">
+        <li id="date">
+          <span class="day"></span>
+          <div class="hour" id="time"></div>
+        </li>
+
+        <li class="humidity-grid">
+          Humidity:
+          <div class="humidity"></div>
+        </li>
+        <li class="wind-grid">
+          Wind:
+          <div class="wind"></div>
+        </li>
+      </ul>
+      <div class="weather-forecast" id="forecast"></div>
+    </main>
+
+    <footer>
+      This project was coded by
+      <a href="https://github.com/judosSantos" target="_blank"> JulianaS</a>, is
+      <a href="https://github.com/judosSantos/my-weather-app" target="_blank"
+        >open-sourced on GitHub</a
+      >
+      and
+      <a href="https://weather-app-juliana.netlify.app/" target="_blank"
+        >hosted on Netlify</a
+      >
+    </footer>
+    <script src="src/app.js"></script>
+  </body>
+</html>
