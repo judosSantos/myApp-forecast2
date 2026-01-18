@@ -208,7 +208,7 @@ hr {
   margin-bottom: 10px;
 }
 .weather-forecast-icon {
-  font-size: 38px;
+  width: 44px;
   text-align: center;
   line-height: 45px;
 }
@@ -217,7 +217,7 @@ hr {
   color: #5c5591;
   display: flex;
   justify-content: center;
-  margin-top: 7px;
+  margin-top: -7px;
 }
 .weather-forecast-temperature {
   padding: 0 10px;
